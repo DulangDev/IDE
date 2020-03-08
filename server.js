@@ -9,7 +9,7 @@ const mongoClient = new MongoClient("mongodb://localhost:27017/", { useNewUrlPar
 
 app.use(express.static(__dirname + "/public"));
 
-mongoClient.connect(function(err, client){
+/*mongoClient.connect(function(err, client){
     if(err) return console.log(err);
     let tasks = client.db("tasks");
     app.use("/tasks", (_, res)=>{
@@ -21,7 +21,7 @@ mongoClient.connect(function(err, client){
     app.use("/", (_, r)=>{
         r.sendFile(__dirname + "/land.html")
     });
-});
+});*/
 
 app.use("/static", express.static(__dirname));
 app.use("/land", (_, r)=>{
