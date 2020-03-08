@@ -1,0 +1,85 @@
+.fragment{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kanban{
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    justify-content: stretch;
+    align-items: stretch;
+    overflow: hidden;
+    max-height: calc(100vh - 5rem);
+}
+.kanban-hdr{
+    top: 0;
+    padding: 0.5rem;
+    background: #212121;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #534bae;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.kanban-col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 auto;
+    overflow-y: scroll;
+    max-height: 100%;
+    width: 33%;
+
+}
+
+.delimiter{
+    width: 1px;
+    background: #534bae;
+}
+
+.progress{
+    display: flex;
+    flex: 0 0 auto;
+    height: 3rem;
+    padding: 1rem;
+}
+
+#progress-bar{
+    height: 1.5rem;
+    background: #ff8f00;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.kanban-task{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1px #534bae;
+}
+
+.complexity{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #212121;
+}
