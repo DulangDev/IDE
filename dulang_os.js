@@ -20,7 +20,7 @@ function lightning() {
         draw(){
             ctx.moveTo(this.x1, this.y1);
             ctx.lineTo(this.x2, this.y2);
-            ctx.stroke();
+
         }
     }
 
@@ -62,7 +62,7 @@ function lightning() {
         let idx = 0;
         let intervalId = null;
         s.forEach(el => el.draw());
-
+        ctx.stroke();
         ctx.closePath();
     }, 1000)
 }
