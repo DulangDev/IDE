@@ -69,7 +69,7 @@ function lightning() {
             s[idx].draw();
             idx++;
         }
-        intervalId = setInterval(draw, 5);
+        intervalId = setInterval(draw, 1);
 
         ctx.closePath();
     }, 1000)
