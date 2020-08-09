@@ -62,14 +62,7 @@ function lightning() {
         generate_sequence(s, 80, center, basic_angle);
         let idx = 0;
         let intervalId = null;
-        function draw(){
-            if(idx >= s.length){
-                clearInterval(intervalId);
-            }
-            s[idx].draw();
-            idx++;
-        }
-        intervalId = setInterval(draw, 1);
+        s.forEach(el => el.draw());
 
         ctx.closePath();
     }, 1000)
