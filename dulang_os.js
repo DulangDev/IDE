@@ -31,9 +31,8 @@ function lightning() {
             let angle = (Math.random() - 0.5)*angle_disp + direction;
             let length = Math.random() * 100;
             if(Math.random() > 0.9 && !final){
-                setTimeout(()=>{
+
                     generate_sequence(seq, 40, center, Math.random()*6, true);
-                }, 0);
 
             }
             let x2 = x1 + Math.cos(angle)*length, y2 = y1+Math.sin(angle)*length;
