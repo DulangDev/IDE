@@ -4,16 +4,86 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type ="module" src="static/caret.js"></script>
-    <script type="module" src="static/textprocess.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/common.css">
 </head>
 <body>
-    <div id="fs"></div>
-    <div id="code-wrapper">
-        <textarea id="code"></textarea>
-        <div id="code-render"></div>
+    <div id="guard"></div>
+
+    <section>
+        <img src="/static/logo.svg" style="width: 30vw; align-self: center"/>
+        <div id="hdr-evolve">
+            <h1 class="header header-at-top" id="h">
+                Dulang has evolved
+            </h1>
+
+
+        </div>
+
+    </section>
+
+    <div id="cons" style="">
+        <section onclick="lightning()">
+            <div>
+                speedUp by 400%
+            </div>
+            <div>
+                by AOT optimized compilation we have acquired astounding performance
+            </div>
+            <canvas id="backgr"></canvas>
+        </section>
+        <section>
+            <div>
+                Type check at compile-time
+            </div>
+
+            <div>
+                all the type errors will be eliminated prior to launch
+            </div>
+        </section>
+        <section>
+            <div>
+                Still flexible and consize
+            </div>
+
+            <div>
+                unlike most languages Dulang has not gained verbose when changed to strictly typed: most types are inferred automatically
+            </div>
+        </section>
+
+        <div id="try">Try it yourself</div>
+
     </div>
 
+
+
+
+
+    <div>
+        <div class="test-code-wrapper" ungone="true">
+            <div class = "test-code">
+                <div id="code-wrapper">
+                    <textarea id="code" spellcheck="false"></textarea>
+                    <div id="code-render"></div>
+                </div>
+            </div>
+        </div>
+        <div class="launch-button" onclick="execute()">Launch me!</div>
+    </div>
+    <div style="color:#9fcdff; margin: 2rem" id="responser">
+
+    </div>
+
+
+    <script src="static/textprocess.js"></script>
+    <script>
+        document.getElementById("code").oninput = edit;
+        fetch("/load").then(r=>r.text()).then(r=>{
+            document.getElementById("code").value = r;
+            document.getElementById("code").oninput({data: ""});
+        })
+    </script>
+    <script src="static/dulang_os.js"></script>
 
 </body>
 </html>

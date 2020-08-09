@@ -1,7 +1,17 @@
-let editor = document.getElementById("code");
+/*let editor = document.getElementById("code");
 let codeRepr = document.getElementById("code-render");
+*/
+function cursor_position() {
+    var sel = document.getSelection();
+    sel.modify("extend", "backward", "paragraphboundary");
+    var pos = sel.toString().length;
+    if(sel.anchorNode != undefined) sel.collapseToEnd();
 
+    return pos;
+}
 
+let codeRepr = document.getElementById("editor");
+let editor = codeRepr;
 function get_lexem(str, startpos){
 
     let lexems = [
@@ -14,7 +24,7 @@ function get_lexem(str, startpos){
         "or", "and", "not", "if",
         "for", "true", "false", "else", "fun", "$class",
         "async", "write", "import", "null", "in", "return", "this" ,
-        "while", "$indent", "$dedent", "class"
+        "while", "$indent", "$dedent"
     ];
     let newpos = startpos;
     if(str.charAt(startpos) === '\n'){
@@ -79,8 +89,8 @@ function get_lexem(str, startpos){
     }
     let end_reader = startpos;
     while(      str.charAt(end_reader) >= 'a' && str.charAt(end_reader) <= 'z'
-            ||  str.charAt(end_reader) >= 'A' && str.charAt(end_reader) <= 'Z'
-            ||  str.charAt(end_reader) === '_'
+        ||  str.charAt(end_reader) >= 'A' && str.charAt(end_reader) <= 'Z'
+        ||  str.charAt(end_reader) === '_'
         ){
         end_reader++;
     }
@@ -153,7 +163,7 @@ function lex_to_text(lexem){
 
     switch(lexem.type){
         case "ws":
-            return "<span class='name'>"+" ".repeat(lexem.end - lexem.start + 1)+"</span>";
+            return " ".repeat(lexem.end - lexem.start + 1);
         case "string":
             return `<span class="literal">"${lexem.value}"</span>`;
         case "number":
@@ -201,8 +211,7 @@ function encodeArr(sym){
         return "&#62";
     else return sym;
 }
-
-function edit(e){
+editor.oninput = (e)=>{
 
     if(e.data === "{" || e.data === '(' || e.data === '['){
         let ins_string = "";
@@ -238,16 +247,22 @@ function edit(e){
 
 
 
-    let lexems = lexical_analyze(editor.value);
+
+    let cursorPos=document.selection.createRange().duplicate(),
+    clickx = cursorPos.getBoundingClientRect().left,
+    clicky = cursorPos.getBoundingClientRect().top;
+
+
+
+    let lexems = lexical_analyze(editor.innerText);
+    let sel = document.getSelection();
+    let saved = [sel.focusNode, sel.focusOffset];
     codeRepr.innerHTML = lexems.reduce((acc, lex) => {
         return acc + lex_to_text(lex);
     }, "");
     editor.style.height = editor.scrollHeight + "px";
+    cursorPos = document.body.createTextRange();
+    cursorPos.moveToPoint(clickx, clicky);
+    cursorPos.select();
 
 };
-
-function execute(){
-    fetch("/execute").then(r=>r.text()).then(r=>{
-        document.querySelector("#responser").innerText = r;
-    })
-}

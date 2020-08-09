@@ -1,9 +1,11 @@
 const express = require("express");
+const fs = require("fs")
 const MongoClient = require("mongodb").MongoClient;
 const fcont = require("./fscontainer");
 let app = express();
+const child_process = require("child_process");
 
-const mongoClient = new MongoClient("mongodb://localhost:27017/", { useNewUrlParser: true });
+
 
 
 
@@ -24,14 +26,32 @@ app.use(express.static(__dirname + "/public"));
 });*/
 
 app.use("/static", express.static(__dirname));
-app.use("/land", (_, r)=>{
-    r.sendFile(__dirname + "/index.html");
-});
 
 app.use("/project", (_, r)=>{
     r.json(new fcont.File(__dirname + "/container"))
 });
 
+app.use("/savefile", (req, r)=>{
+    req.setEncoding('utf8');
+    req.rawBody = '';
+    req.on('data', function(chunk) {
+        req.rawBody += chunk;
+    });
+    req.on("end", ()=>{
+        fs.writeFileSync("main.dul", req.rawBody);
+    })
+});
+
+app.use("/execute", (_, r)=>{
+    r.send(child_process.execFileSync(__dirname+"/Dulang"))
+});
+app.use("/load", (_, r)=>{
+    r.send(fs.readFileSync("main.dul"));
+});
+
+app.use("/", (_, r)=>{
+    r.sendFile(__dirname + "/index.html");
+});
 
 
-app.listen(9087);
+app.listen(80);

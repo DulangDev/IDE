@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08729a87-67f4-4aa5-bf7b-ead59fcbb574" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="08729a87-67f4-4aa5-bf7b-ead59fcbb574" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dulang_os.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-embed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lexerv2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/land.html" beforeDir="false" afterPath="$PROJECT_DIR$/land.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textprocess.js" beforeDir="false" afterPath="$PROJECT_DIR$/textprocess.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,18 +43,29 @@
       <list>
         <option value="HTTP Request" />
         <option value="package.json" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Xuj7Xs0DRKbIOUFEnMPN29NWPl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="10.17.28" />
     <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -35,23 +76,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,10 +105,57 @@
       <workItem from="1582829956264" duration="4019000" />
       <workItem from="1583265183967" duration="1869000" />
       <workItem from="1583517033686" duration="2872000" />
+      <workItem from="1583678515351" duration="576000" />
+      <workItem from="1585234344822" duration="3761000" />
+      <workItem from="1585656223513" duration="264000" />
+      <workItem from="1589720839597" duration="242000" />
+      <workItem from="1593790637559" duration="2469000" />
+      <workItem from="1594049676587" duration="442000" />
+      <workItem from="1594324233714" duration="151000" />
+      <workItem from="1594944240053" duration="3576000" />
+      <workItem from="1595517392448" duration="759000" />
+      <workItem from="1595520068872" duration="5093000" />
+      <workItem from="1596573417787" duration="325000" />
+      <workItem from="1596579873263" duration="2182000" />
+      <workItem from="1596969685560" duration="14201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1419" height="111" key="GridCell.Tab.0.bottom" timestamp="1596984671026">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="111" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596984671026" />
+    <state width="1419" height="111" key="GridCell.Tab.0.center" timestamp="1596984671024">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="111" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596984671024" />
+    <state width="1419" height="111" key="GridCell.Tab.0.left" timestamp="1596984671024">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="111" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596984671024" />
+    <state width="1419" height="111" key="GridCell.Tab.0.right" timestamp="1596984671025">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="111" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596984671025" />
+    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596978498894">
+      <screen x="0" y="25" width="1440" height="769" />
+    </state>
+    <state x="521" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.769@0.25.1440.769" timestamp="1596978498894" />
   </component>
 </project>
